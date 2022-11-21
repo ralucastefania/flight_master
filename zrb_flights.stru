@@ -1,0 +1,22 @@
+@EndUserText.label : 'Structure of flights for display'
+@AbapCatalog.enhancement.category : #EXTENSIBLE_ANY
+define structure zrb_flights {
+
+  fldate     : s_date;
+  carrid     : s_carr_id;
+  connid     : s_conn_id;
+  carrname   : s_carrname;
+  planetype  : s_planetye;
+  cityfrom   : s_from_cit;
+  cityto     : s_to_city;
+  deptime    : s_dep_time;
+  arrtime    : s_arr_time;
+  free_b     : z_rb_flight_min_b;
+  free_e     : z_rb_flight_min_e;
+  free_f     : z_rb_flight_min_f;
+  free_total : z_rb_flight_min_total;
+  @Semantics.amount.currencyCode : 'sflight.currency'
+  price      : s_price;
+  currency   : s_currcode;
+
+}
