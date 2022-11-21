@@ -3,7 +3,7 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT z_rb_flight_project_phase4.
+REPORT z_rb_flight_project_phase4. 
 
 DATA lt_db_flights TYPE TABLE OF zrb_flights.
 DATA lr_alv TYPE REF TO cl_salv_table.
